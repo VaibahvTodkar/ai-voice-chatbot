@@ -1,0 +1,13 @@
+/voicebot/.metadata
+/voicebot/backend/target/
+/voicebot/backend/.mvn/
+/voicebot/backend/.settings/
+/voicebot/backend/logs/
+
+
+/voicechatbot-frountend/node_modules/
+/voicechatbot-frountend/.angular/
+/voicechatbot-frountend/build/
+/voicechatbot-frountend/dist/
+/voicechatbot-frountend/.git/
+/voicechatbot-frountend/.vscode/
