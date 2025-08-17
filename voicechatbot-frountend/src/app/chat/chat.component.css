@@ -1,0 +1,12 @@
+.chat-outer {
+  background: linear-gradient(120deg, #f8fafc 80%, #e3fcec 100%);
+  min-height: 100vh;
+}
+
+.chat-container {
+  display: flex;
+  height: 85vh;
+  border: 1px solid #ccc;
+  min-height: 75vh;
+  box-shadow: 0 8px 32px rgba(60, 60, 120, 0.10), 0 1.5px 4px rgba(0,0,0,0.07);
+}

@@ -1,0 +1,30 @@
+.jumbotron {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+}
+
+.chatbot-intro {
+  background: #ffffff;
+  border: 1px solid #dee2e6;
+  transition: transform 0.2s ease-in-out;
+}
+
+.chatbot-intro:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card {
+  background-color: #f8f9fa;
+  font-size: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.feature-card:hover {
+  background-color: #0d6efd;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.placeholder {
+  display: block;
+}

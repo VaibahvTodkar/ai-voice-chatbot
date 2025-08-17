@@ -1,0 +1,197 @@
+
+.chat-window {
+  height: calc(100vh - 180px);
+  overflow-y: auto;
+  padding: 24px 18px 24px 18px;
+  background: linear-gradient(120deg, #f8fafc 80%, #e3fcec 100%);
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  scrollbar-width: thin;
+  scrollbar-color: #b2dfdb #f8fafc;
+}
+
+/* Custom scrollbar styling for Webkit browsers */
+.chat-window::-webkit-scrollbar {
+  width: 8px;
+}
+.chat-window::-webkit-scrollbar-track {
+  background: #f8fafc;
+}
+.chat-window::-webkit-scrollbar-thumb {
+  background-color: #b2dfdb;
+  border-radius: 10px;
+  border: 2px solid #f8fafc;
+}
+
+/* Message Bubbles */
+.my-3 .d-inline-block {
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.bg-light.border-success {
+  background: linear-gradient(90deg, #e3fcec 70%, #b2dfdb 100%) !important;
+  border: 1.5px solid #43a047 !important;
+  color: #388e3c !important;
+  box-shadow: 0 2px 8px rgba(67, 160, 71, 0.08);
+}
+.bg-success.text-white {
+  background: linear-gradient(90deg, #29d362 80%, #388e3c 100%) !important;
+  color: #fff !important;
+  box-shadow: 0 2px 8px rgba(67, 160, 71, 0.13);
+}
+.fw-medium.text-success {
+  color: #388e3c !important;
+}
+.fw-medium.text-white {
+  color: #fff !important;
+}
+
+/* Timestamp */
+.text-muted {
+  opacity: 0.7;
+  font-size: 0.85rem;
+  letter-spacing: 0.03em;
+}
+
+/* Input Area Styling */
+.input-group {
+  background: #f8fafc;
+  border-radius: 30px;
+  box-shadow: 0 2px 8px rgba(67, 160, 71, 0.07);
+  padding: 6px 10px;
+  align-items: center;
+}
+
+.form-control.border-success {
+  border: none !important;
+  background: transparent !important;
+  border-radius: 30px !important;
+  font-size: 1.08rem;
+  padding: 12px 18px;
+  box-shadow: none !important;
+  outline: none !important;
+  color: #388e3c;
+  transition: background 0.2s;
+}
+.form-control.border-success:focus {
+  background: #e3fcec !important;
+  color: #388e3c;
+  box-shadow: 0 0 0 2px #b2dfdb;
+}
+
+.btn-success {
+  border-radius: 30px !important;
+  font-weight: 600;
+  font-size: 1.05rem;
+  padding: 10px 28px;
+  background: linear-gradient(90deg, #43a047 80%, #388e3c 100%);
+  border: none;
+  box-shadow: 0 2px 8px rgba(67, 160, 71, 0.10);
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.btn-success:hover, .btn-success:focus {
+  background: linear-gradient(90deg, #388e3c 80%, #43a047 100%);
+  box-shadow: 0 4px 16px rgba(67, 160, 71, 0.18);
+}
+
+/* Send icon animation */
+.btn-success .bi-send-fill {
+  transition: transform 0.15s;
+}
+.btn-success:active .bi-send-fill {
+  transform: translateX(3px);
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .chat-window {
+    padding: 12px 4px;
+  }
+  .input-group {
+    padding: 4px 4px;
+  }
+}
+
+/* loading start ######################################################### */
+.dot-pulse {
+  position: relative;
+  left: -9999px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #9880ff;
+  color: #9880ff;
+  box-shadow: 9999px 0 0 -5px;
+  animation: dot-pulse 1.5s infinite linear;
+  animation-delay: 0.25s;
+}
+
+.dot-pulse::before,
+.dot-pulse::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #9880ff;
+  color: #9880ff;
+}
+
+.dot-pulse::before {
+  box-shadow: 9984px 0 0 -5px;
+  animation: dot-pulse-before 1.5s infinite linear;
+  animation-delay: 0s;
+}
+
+.dot-pulse::after {
+  box-shadow: 10014px 0 0 -5px;
+  animation: dot-pulse-after 1.5s infinite linear;
+  animation-delay: 0.5s;
+}
+
+@keyframes dot-pulse-before {
+  0% {
+    box-shadow: 9984px 0 0 -5px;
+  }
+  30% {
+    box-shadow: 9984px 0 0 2px;
+  }
+  60%, 100% {
+    box-shadow: 9984px 0 0 -5px;
+  }
+}
+
+@keyframes dot-pulse {
+  0% {
+    box-shadow: 9999px 0 0 -5px;
+  }
+  30% {
+    box-shadow: 9999px 0 0 2px;
+  }
+  60%, 100% {
+    box-shadow: 9999px 0 0 -5px;
+  }
+}
+
+@keyframes dot-pulse-after {
+  0% {
+    box-shadow: 10014px 0 0 -5px;
+  }
+  30% {
+    box-shadow: 10014px 0 0 2px;
+  }
+  60%, 100% {
+    box-shadow: 10014px 0 0 -5px;
+  }
+}
+
+.stage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 32px 0;
+  margin: 0 -5%;
+  overflow: hidden;
+}

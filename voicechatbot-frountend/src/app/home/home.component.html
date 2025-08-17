@@ -1,0 +1,57 @@
+<div class="container mt-2 mb-5">
+  <header class="jumbotron p-5 bg-light rounded-3 shadow-lg text-center">
+    <h1 class="display-4 fw-bold text-primary">
+      🤖 AI Voice & Text Chatbot
+    </h1>
+    <p class="lead text-muted">
+      Talk, type, and explore conversations powered by AI — anywhere, anytime.
+    </p>
+    <div class="mt-4">
+      <button class="btn btn-primary btn-lg shadow" [routerLink]="['/chat']">
+        🚀 Start Chatting Now
+      </button>
+    </div>
+  </header>
+
+  <!--  Features Section -->
+  <section class="chatbot-intro mt-5 p-4 bg-white rounded shadow-sm">
+    <h2 class="text-center mb-4">✨ Why Choose Our Chatbot?</h2>
+    <div class="row text-center">
+      <div class="col-md-3 col-6 mb-3">
+        <div class="feature-card p-3 rounded shadow-sm h-100">
+          🎤 <br><span class="fw-bold">Speak or type</span>
+          <p class="small text-muted mt-2">Interact your way with voice or text.</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-6 mb-3">
+        <div class="feature-card p-3 rounded shadow-sm h-100">
+          💬 <br><span class="fw-bold">Instant responses</span>
+          <p class="small text-muted mt-2">Get quick, accurate answers anytime.</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-6 mb-3">
+        <div class="feature-card p-3 rounded shadow-sm h-100">
+          🔊 <br><span class="fw-bold">Voice replies</span>
+          <p class="small text-muted mt-2">Hear natural-sounding AI voices.</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-6 mb-3">
+        <div class="feature-card p-3 rounded shadow-sm h-100">
+          🔐 <br><span class="fw-bold">Secure login</span>
+          <p class="small text-muted mt-2">Protected with JWT authentication.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Call to Action -->
+  <section class="mt-5 text-center">
+    <h2 class="fw-bold">Ready to Start?</h2>
+    <p class="text-muted">Sign in and explore the future of communication.</p>
+    <button class="btn btn-success btn-lg shadow" [routerLink]="['/login']">
+      🔑 Login to Get Started
+    </button>
+  </section>
+</div>
