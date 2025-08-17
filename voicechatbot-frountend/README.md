@@ -2,6 +2,47 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.9.
 
+# VoiceBot Full-Stack Application
+
+A full-stack **VoiceBot** application with secure authentication, voice-based interactions, and a responsive frontend.  
+The backend is built with **Spring Boot** and **JWT authentication**, while the frontend is developed using **Angular 19** and **Bootstrap 5**.
+
+---
+
+## Table of Contents
+- [Frontend](#frontend)
+- [Technologies Used](#technologies-used)
+  - [Authentication](#authentication)
+    - [Login](#login)
+    - [Register](#register)
+  - [Voice & Chat](#voice--chat)
+    
+    - [Chat](#chat)
+
+---
+
+## Frontend
+
+The frontend is a modern, responsive web application built with **Angular 19** and **Bootstrap 5**. It provides a clean interface to interact with the VoiceBot backend APIs.
+
+### Key Features
+- **User Authentication:** Login and register with JWT token handling.
+- **Voice Interaction:** Record audio, convert it to text, or generate audio from text.
+- **Chat Interface:** Real-time chat with audio input and output.
+- **Responsive Design:** Works on desktops, tablets, and mobile devices.
+- **Session Management:** Stores user information and JWT tokens securely in session storage.
+- **API Integration:** Fully connected to backend endpoints for authentication, TTS, STT, and chat.
+
+### Technologies Used
+- Angular 19
+- TypeScript
+- HTML5 & CSS3
+- Bootstrap 5
+- HTTPClient for API calls
+
+
+
+
 ## Development server
 
 To start a local development server, run:
