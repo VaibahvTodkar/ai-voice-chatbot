@@ -1,0 +1,25 @@
+Clone Repository
+git clone https://github.com/VaibahvTodkar/ai-voice-chatbot
+
+Open project folder : cd ai-voice-chatbot
+
+Frontend Installation
+cd voicechatbot-frountend
+Use : npm install
+Run : ng serve
+Frontend is running on localhost : http://localhost:4200
+
+Backend Installation 
+cd voicebot OR Open voicebot workspace in eclipse ide
+
+go to : cd backend
+
+use : mvn clean install
+
+Run backend : mvn spring-boot:run
+
+
+
+Data base Setup
+import voice-chatbot data from data/database/voice-chatbot.sql file location in your database
+in backend application.properties file change the database url and username and password.
