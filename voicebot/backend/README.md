@@ -118,3 +118,16 @@ This project provides a complete **Spring Boot REST API** for user authenticatio
   "text": "Hello, Chatbot!"
 }
 
+
+
+## Setup & Installation
+
+1. **Clone the repository:**
+```bash
+git clone https://github.com/your-username/voicebot.git
+
+cd voicebot
+
+mvn clean install
+
+mvn spring-boot:run
